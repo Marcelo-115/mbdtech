@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #000000, #3533cd);
+    color: #fff;
+}
+
+/* Menu */
+.menu-inicial {
+    padding: 20px 40px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    color: #00e3f8;
+}
+
+/* Container Principal */
+.container {
+    padding: 60px 40px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Texto */
+.txt-banner span {
+    font-size: 32px;
+    color: #fff;
+    display: block;
+}
+
+.txt-banner h1 {
+    font-size: 64px;
+    color: #00e3f8;
+    margin: 10px 0;
+}
+
+.txt-banner p {
+    font-size: 16px;
+    color: #fff;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+.button-banner button {
+    background-color: #be1e77;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.button-banner button:hover {
+    background-color: #e14592;
+}
+
+/* Logo */
+.logo img {
+    width: 300px;
+    max-width: 100%;
+}
+
+
+/*Sobre nos*/
+
+
+.sobre-nos {
+    padding: 80px 40px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+
+.sobre-nos h2 {
+    font-size: 36px;
+    color: #3533cd;
+    margin-bottom: 20px;
+    
+}
+
+.sobre-nos p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.txt-sobre{
+    max-width: 600px;
+}
+
+.img-sobre-nos img{
+    width: 600px;
+}
+
+
+
+
+/*Responsivo*/
+
+@media (max-width: 768px) {
+    .menu-inicial {
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .txt-banner h1 {
+        font-size: 42px;
+    }
+
+    .txt-banner span {
+        font-size: 24px;
+    }
+
+    .txt-banner p {
+        font-size: 14px;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo img {
+        width: 200px;
+    }
+
+    .button-banner button {
+        width: 80%;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .txt-sobre{
+        max-width: 300px;
+    }
+
+    .img-sobre-nos img{
+        width: 300px;
+    }
+
+
+}
