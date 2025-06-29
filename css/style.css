@@ -222,3 +222,59 @@ body {
     width: 300px;
   }
 }
+
+@media (max-width: 480px) {
+  .menu {
+    gap: 8px;
+  }
+
+  .txt-banner h1 {
+    font-size: 32px;
+  }
+
+  .txt-banner span {
+    font-size: 20px;
+  }
+
+  .txt-banner p {
+    font-size: 12px;
+  }
+
+  .button-banner button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+  .container,
+  .sobre-nos,
+  .features-detalhadas {
+    padding: 30px 15px;
+  }
+
+  .txt-sobre {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .sobre-nos h2,
+  .features-detalhadas h2 {
+    font-size: 28px;
+  }
+
+  .features-item i {
+    font-size: 36px;
+  }
+
+  .title-item-features {
+    font-size: 20px;
+  }
+
+  .features-item p {
+    font-size: 14px;
+  }
+}
+
