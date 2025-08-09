@@ -1,0 +1,110 @@
+/* Barra de navegação */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: linear-gradient(90deg, #000000, #3533cd);
+  color: #fff;
+}
+
+.logo img {
+  height: 250px;
+}
+
+.menu-desktop {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu-desktop li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu-desktop li a:hover {
+  color: #00e3f8;
+}
+
+/* Botão abrir menu */
+.btn-abrir-menu {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Menu Mobile */
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Fica escondido fora da tela */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, #000000, #3533cd);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: right 0.3s ease-in-out; /* Animação suave */
+  z-index: 1000;
+}
+
+.menu-mobile li{
+    margin: 10px 0;
+    border-bottom: 1px solid #444;
+}
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-mobile li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-mobile li a:hover {
+  color: #00e3f8;
+}
+
+.btn-fechar {
+  font-size: 28px;
+  cursor: pointer;
+  align-self: flex-end;
+  color: white;
+}
+
+/* Quando ativo */
+.menu-mobile.menu-ativo {
+  right: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  
+.logo img {
+  width: 150px;
+  height:auto;
+}
+
+  .btn-abrir-menu {
+    display: block;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .logo img {
+  width: 50px;
+  height:auto;
+}
+}
