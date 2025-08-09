@@ -1,0 +1,27 @@
+footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.logo-rodape img {
+    width: 150px;   
+    margin-bottom: 10px;    
+}
+
+.redes-sociais {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #6c757d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: #123d62;
+    text-decoration: none;
+    
+}
