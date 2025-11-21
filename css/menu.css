@@ -42,7 +42,6 @@
   position: fixed;
   top: 0;
   right: -250px; /* Fica escondido fora da tela */
-  width: 50%;
   height: 100%;
   background: linear-gradient(90deg, #000000, #3533cd);
   padding: 20px;
@@ -108,3 +107,4 @@
   height:auto;
 }
 }
+
