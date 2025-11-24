@@ -37,18 +37,19 @@
   color: #fff;
 }
 
-/* Menu Mobile */
+/* Menu Mobile */ 
 .menu-mobile {
   position: fixed;
   top: 0;
-  right: -250px; /* Fica escondido fora da tela */
+  right: -100%; /* Alterado de -250px para -100% */
+  width: 30%;
   height: 100%;
   background: linear-gradient(90deg, #000000, #3533cd);
   padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 15px;
-  transition: right 0.3s ease-in-out; /* Animação suave */
+  transition: right 0.3s ease-in-out;
   z-index: 1000;
 }
 
@@ -88,17 +89,17 @@
   .menu-desktop {
     display: none;
   }
-
   
-.logo img {
-  width: 150px;
-  height:auto;
-}
-
   .btn-abrir-menu {
     display: block;
   }
+  
+  .logo img {
+    height: 150px;
+    width: auto;
+  }
 }
+
 
 
 @media (max-width: 480px) {
@@ -107,4 +108,3 @@
   height:auto;
 }
 }
-
